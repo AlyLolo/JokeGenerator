@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+}
+body{
+    background-color: aquamarine;
+}
+.input{
+    text-align: center;
+    font-size: 2rem;
+}
+input{
+    font-size: 1rem;
+}
+button{
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+}

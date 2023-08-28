@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Aly's joke generator</h1>
+    <form class="input" method="POST" action="/submit">
+        <label for="keyword">Enter a keyword you would like to appear in your joke:</label>
+        <input type="text" id="keyword-box" name="keyword" placeholder="optional">
+        <button type="submit" name="submit">Generate Joke</button>
+    </form>
+    <% if (!locals.joke){ %>
+    <h2>Your joke will appear right here</h2>
+    <% } else{ %>
+    <h2> <%= joke.setup %></h2>
+    <h2> <%= joke.delivery %></h2>
+    <% } %>
+</body>
+</html>
